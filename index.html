@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>pink</title>
+</head>
+<body>
+<header class="page-header">
+    <figure class="page-header__logo">
+        <img src="/img/logotype-white-mobile.svg" width="22" height="75" alt="logo"/>
+    </figure>
+    <button class="main-nav__toggle" type="button"></button>
+    <nav class="main-nav main-nav-closed">
+        <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="#">Главная</a></li>
+                <li class="main-nav__item"><a href="#">Фотографии</a></li>
+                <li class="main-nav__item"><a href="#">Конкурс</a></li>
+                <li class="main-nav__item"><a href="#">Html Academy</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="main-header">
+        <figure class="main-header__img">
+            <img src="img/back-mobile@1x.jpg" width="320" height="462" alt="app-image">
+        </figure>
+    </section>
+    <section class="app">
+        <button class="btn-download-app btn" type="button">Скачать приложение</button>
+        <ul class="app__platform-list">
+            <li class="app__platform-item"><a href="#">apple</a></li>
+            <li class="app__platform-item"><a href="#">android</a></li>
+            <li class="app__platform-item"><a href="#">windows phone</a></li>
+        </ul>
+        <p class="app__info">
+            Доступно для iPhone,iPad,Android,Windows Phone,OS X,Windows 8
+        </p>
+    </section>
+    <section class="advantages">
+        <h2 class="advantages__title">
+            Устали от серости мегаполиса?<span>Нам есть, что вам предложить!</span>
+        </h2>
+        <ul class="advantages__list">
+            <li class="advantages__item">
+                <h3 title="advantages__item-title">Поднимает настроение</h3>
+                <p>
+                    Приложение позволит вам победить осеннюю хандру и депрессию
+                    буквально в несколько кликов!
+                </p>
+            </li>
+            <li class="advantages__item">
+                <h3 title="advantages__item-title">Меняет мир вокруг</h3>
+                <p>
+                    Сделайте снимок и украсьте его смайликом или текстовой
+                    подписью, чтобы усилить эффект
+                </p>
+            </li>
+            <li class="advantages__item">
+                <h3 title="advantages__item-title">Заводит новых друзей</h3>
+                <p>
+                    Ставьте лайки, комментируйте, делитесь фотографиями
+                    с друзьями и заводите новых
+                </p>
+            </li>
+        </ul>
+        <figure class="advantages__img">
+            <img src="img/iphone%20screen%20%233.jpg" width="157" height="320" alt="">
+        </figure>
+    </section>
+    <section class="reviews slider">
+            <blockquote class="reviews__items">
+                <cite class="reviews__author-name">Николай Петров</cite>
+                <p>
+                    «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                    А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                </p>
+            </blockquote>
+            <blockquote class="reviews__item">
+                <cite class="reviews__author-name"></cite>
+                <p></p>
+            </blockquote>
+            <blockquote class="reviews__item">
+                <cite class="reviews__author-name"></cite>
+                <p></p>
+            </blockquote>
+        <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
+        <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
+        <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
+        <div class="reviews__toggles  slider__toggles">
+            <label class="slider__toggle" for="reviews-input-1"></label>
+            <label class="slider__toggle" for="reviews-input-2"></label>
+            <label class="slider__toggle" for="reviews-input-3"></label>
+        </div>
+    </section>
+    <section class="price slider">
+        <table class="prise__list">
+            <tr>
+                <th class="price__name">
+                    Стандарт<span>3,99 USD</span>
+                </th>
+            </tr>
+            <tr>
+                <td class="price__item">
+                    <p>Розовый фильтр</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="price__item">
+                    <p>Смайлики</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="price__item">
+                    <p>Комментарии</p>
+                </td>
+            </tr>
+        </table>
+        <input class="slider__input" type="radio" name="reviews" id="price-input-1">
+        <input class="slider__input" type="radio" name="reviews" id="price-input-2" checked>
+        <input class="slider__input" type="radio" name="reviews" id="price-input-3">
+        <div class="price__toggles  slider__toggles">
+            <label class="slider__toggle" for="price-input-1"></label>
+            <label class="slider__toggle" for="price-input-2"></label>
+            <label class="slider__toggle" for="price-input-3"></label>
+        </div>
+    </section>
+    <section class="feedback">
+        <h3 class="feedback__title">
+            Остались вопросы?Свяжитесь с нами!
+        </h3>
+        <ul class="feedback__contacts-list">
+            <li class="feedback__contacts-item">
+                <b class="feedback__contacts-title">Звоните:</b>
+                <p>+7 (812) 555-66-66</p>
+            </li>
+            <li class="feedback__contacts-item">
+                <b class="feedback__contacts-title">Пишите:</b>
+                <p>mail@htmlacademy.ru</p>
+            </li>
+            <li class="feedback__contacts-item">
+                <b class="feedback__contacts-title">Приезжайте в гости:</b>
+                <p>ул. Большая Конюшенная, 19/8</p>
+            </li>
+        </ul>
+    </section>
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5929501698904!2d30.32171000793478!3d59.93889629418845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1500586334506"
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="map__marker"></div>
+    </section>
+</main>
+<footer class="page-footer">
+
+</footer>
+</body>
+</html>
