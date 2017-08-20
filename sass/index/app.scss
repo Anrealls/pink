@@ -1,0 +1,128 @@
+@import "../var";
+
+.app__img {
+  margin-top: -15px;
+  margin-bottom: 30px;
+  width: 100%;
+  min-height: 460px;
+  padding: 0 20px;
+  background: url(../../img/promo-header_bgr-hand-mobile.png)50% 155px no-repeat,
+              url(../../img/promo-header_bgr-blue-mobile.jpg)50% 0 no-repeat;
+  background-size: contain,cover;
+  @media #{$tablet-widths} {
+    display: none;
+  }
+}
+.app__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  width: 100%;
+  background-color: #1d2631;
+  @media #{$tablet-widths} {
+    align-items: flex-start;
+    margin-top: 0;
+    margin-bottom: 55px;
+    padding-bottom: 0;
+    width: 100%;
+    height: 730px;
+    background: url(../../img/index-tablet.png) no-repeat center;
+  }
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media #{$tablet-widths} {
+    margin-left: 5%;
+  }
+}
+
+.app__title {
+  display: none;
+  @media #{$tablet-widths} {
+    display: block;
+    margin-top: 160px;
+    width: 200px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 1.3;
+    font-weight: 300;
+    color: #ffffff;
+    z-index: 1;
+  }
+}
+.btn-download-app {
+  padding: 15px 35px;
+  margin-bottom: 35px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  background-color: transparent;
+  border-radius: 45px;
+  &:hover {
+    color: #d22856;
+    background-color: #ffffff;
+  }
+  &:active {
+    color: rgba(237,169,187,0.3);
+  }
+
+}
+.app__platform-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 25px;
+}
+.app__platform-item {
+  font-size: 0;
+  margin: 0;
+  list-style: none;
+  padding-right: 30px;
+  &--android {
+    @media #{$tablet-widths} {
+      opacity: 0.3;
+    }
+  }
+}
+.app__info {
+  margin: 0;
+  text-align: center;
+  width: 230px;
+  color: #ffffff;
+  font-weight: 300;
+}
+@media #{$desktop-width} {
+  .app__wrapper {
+    height: 850px;
+    background: url("../../img/promo-header_bgr-hand-tablet.png") no-repeat 65% 100%,
+                url("../../img/header-desktop.jpg") no-repeat center;
+    background-size: 600px,cover;
+  }
+  .app {
+    margin-left: 14%;
+    margin-top: 70px;
+  }
+  .app__title {
+    width: 300px;
+    font-size: 50px;
+  }
+  .btn-download-app {
+    margin-bottom: 60px;
+    padding: 15px 55px;
+  }
+  .app__platform-list {
+    margin-bottom: 50px;
+  }
+  .app__platform-item {
+    &--android {
+      opacity: 1;
+    }
+  }
+}

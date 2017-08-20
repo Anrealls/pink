@@ -1,0 +1,232 @@
+@import "../var";
+
+.send-img {
+  background-color: #f2f2f2;
+  margin-bottom: 40px;
+}
+.send-img__img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 20px 20px 0 20px;
+}
+.send-img__btn {
+  margin-right: 35px;
+  &--crop {
+    background: url("../../img/spritesheet.png") no-repeat -653px -24px;
+    width: 44px;
+    height: 44px;
+  }
+  &--fill {
+    background: url("../../img/spritesheet.png") no-repeat -732px -24px;
+    width: 36px;
+    height: 34px;
+  }
+  &--contrast {
+    background: url("../../img/spritesheet.png") no-repeat -611px -24px;
+    width: 32px;
+    height: 32px;
+    margin-right: 0;
+  }
+}
+.send-img__btn-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.send-img__range {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 240px;
+  height: 2px;
+  background-color: #283645;
+  border: none;
+  &:active span {
+    background-color: #f2f2f2;
+  }
+  span {
+    margin-top: -3px;
+    width: 10px!important;
+    height: 10px!important;
+    border: 3px solid #d22856!important;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer!important;
+    &:hover {
+      background-color: #f2f2f2;
+    }
+    &:active {
+      background-color: #f2f2f2;
+      outline: none;
+    }
+  }
+}
+.send-img__btn-send-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  border-top: 1px solid #dddfe0;
+}
+.send-img__btn-send,
+.send-img__btn-reset {
+  display: block;
+  padding: 20px 0;
+  width: 280px;
+  border-radius: 50px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  background-color: transparent;
+}
+.send-img__btn-send {
+  margin-bottom: 10px;
+  border: 2px solid #d22856;
+  color: #d22856;
+  &:hover {
+    color: #ffffff;
+    background-color: #d22856;
+  }
+  &:active {
+    color: rgba(255,255,255,0.3);
+    background-color: #d22856;
+  }
+}
+.send-img__btn-reset {
+  opacity: 0.1;
+  cursor: auto;
+  border: 2px solid #000000;
+  &:hover {
+    opacity: 0.3;
+  }
+  &:active {
+    background-color: #b5b9be;
+    border-color: #b5b9be;
+    opacity: 1;
+    color: rgba(255,255,255,0.3)
+  }
+}
+@media #{$tablet-widths} {
+  .send-img__btn-send-wrapper {
+    border: none;
+    margin-top: 40px;
+    padding: 0;
+  }
+  .send-img {
+    padding: 60px 30px;
+  }
+  .send-img__img {
+    margin: 0;
+    padding: 0;
+    margin-right: 40px;
+  }
+  .send-img__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .send-img__btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .send-img__range-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 2px solid #dddfe0;
+  }
+  .send-img__range {
+    display: block;
+    margin-right: 20px;
+    margin-bottom: 0;
+    width: 200px!important;
+    &--mobile {
+      display: none;
+    }
+    span {
+      margin-top: -1px;
+      width: 8px!important;
+      height: 8px!important;
+      border: 2px solid #d22856!important;
+    }
+  }
+  .send-img__btn {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    &--crop {
+      background: url("../../img/spritesheet.png") no-repeat -705px -93px;
+      width: 22px;
+      height: 22px;
+      margin-right: 20px;
+    }
+    &--fill {
+      background: url("../../img/spritesheet.png") no-repeat -671px -106px;
+      width: 18px;
+      height: 22px;
+      margin-right: 24px;
+    }
+    &--contrast {
+      background: url("../../img/spritesheet.png") no-repeat -670px -83px;
+      width: 16px;
+      height: 16px;
+      margin-right: 26px;
+    }
+  }
+  .send-img__btn-send {
+    margin-bottom: 25px;
+  }
+}
+@media #{$desktop-width} {
+  .send-img {
+    margin-bottom: 0;
+  }
+  .send-img__btn-send-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 140px;
+  }
+  .send-img__btn-send,
+  .send-img__btn-reset {
+    padding: 15px 40px;
+    width: 185px;
+    box-sizing: border-box;
+  }
+  .send-img__btn-send {
+    margin-right: 45px;
+    margin-bottom: 0;
+  }
+  .send-img__btn {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    &--crop {
+      background: url("../../img/spritesheet.png") no-repeat -554px -79px;
+      width: 44px;
+      height: 44px;
+    }
+    &--fill {
+      background: url("../../img/spritesheet.png") no-repeat -498px -79px;
+      width: 36px;
+      height: 40px;
+    }
+    &--contrast {
+      background: url("../../img/spritesheet.png") no-repeat -619px -85px;
+      width: 32px;
+      height: 32px;
+    }
+  }
+  .send-img__range {
+    width: 290px!important;
+    span {
+      margin-top: 0;
+    }
+
+  }
+
+
+}

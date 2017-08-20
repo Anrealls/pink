@@ -1,0 +1,191 @@
+@import "../var";
+
+.price {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -70px;
+    display: block;
+    width: 102%;
+    height: 140px;
+    background: #f2f2f2;
+    transform: rotate(-4deg);
+    z-index: 10;
+  }
+}
+.price__wrapper {
+  position: relative;
+  margin-bottom: 70px;
+  width: 100%;
+  z-index: 10;
+}
+.price__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.price__items-tittle {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-left: 2px solid #f2f2f2;
+  border-right: 2px solid #f2f2f2;
+  background-color: #283645;
+  span {
+    font-size: 24px;
+    font-weight: 300;
+    color: #b7bcc1;
+  }
+}
+.price__items-first::after {
+  content: "Хит";
+  position: absolute;
+  top: 10px;
+  left: -25px;
+  width: 100px;
+  height: 30px;
+  background-color: #d22856;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  transform: rotate(-46deg);
+}
+.price__items-first {
+  position: relative;
+  overflow: hidden;
+}
+.price__items-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+}
+.price__item {
+  position: relative;
+  margin: 0;
+  padding: 20px 0;
+  width: 100%;
+  background-color: #ffffff;
+  border-right: 2px solid #e5e5e5;
+  border-left: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+  line-height: 30px;
+  text-transform: uppercase;
+  p {
+    margin: 0;
+    margin-left: 20px;
+  }
+}
+
+
+
+.price__marker--positive::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  margin: 0 auto;
+  background: url("../../img/spritesheet.png") no-repeat -929px -20px;
+  width: 31px;
+  height: 21px;
+}
+.price__marker--negative::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  margin: 0 auto;
+  background: url("../../img/spritesheet.png") no-repeat -893px -21px;
+  width: 27px;
+  height: 26px;
+}
+
+
+@media #{$tablet-widths}{
+  .price__items--zero {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: -200%;
+  }
+  .price__items--second {
+    position: absolute;
+    top: 0;
+    right: -100%;
+  }
+  .price__items--third {
+    position: absolute;
+    top: 0;
+    left: -100%;
+  }
+  .price {
+    padding: 0 40px;
+  }
+  .price__toggles {
+    display: none;
+  }
+  .price__wrapper {
+    width: 25%;
+    left: 13%;
+  }
+  .price__item {
+    padding: 25px 0;
+  }
+  .price__items--first,
+  .price__items--second,
+  .price__items--third {
+    p {
+      display: none;
+    }
+  }
+  .price__items--zero {
+    display: block;
+    .price__item {
+      padding: 10px;
+      p {
+        margin-left: 10px;
+      }
+    }
+    .price__item--first {
+      border-top: 2px solid #e5e5e5;
+    }
+  }
+  .price__marker--positive::before,
+  .price__marker--negative::before {
+    top: 10px;
+    left: 0;
+    right: 0;
+  }
+  .price__marker--positive::before {
+    top: 15px;
+  }
+}
+@media #{$desktop-width} {
+  .price {
+    padding: 20px 17%;
+    margin-bottom: 20px;
+  }
+
+
+  }
+
+

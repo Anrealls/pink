@@ -1,0 +1,140 @@
+@import "../var";
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    display: inline-block;
+    margin: 0;
+    width: 245px;
+    margin-bottom: 50px;
+    text-align: center;
+    line-height: 30px;
+  }
+}
+.gallery__item {
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.gallery__img {
+  position: relative;
+  margin: 0;
+  margin-bottom: -7px;
+  span {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    padding: 12px 20px;
+    background-color: #d22856;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+}
+.gallery__content {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px;
+  width: 240px;
+  background-color: #f2f2f2;
+  text-align: left;
+  p {
+    margin: 0;
+    margin-bottom: 15px;
+    min-height: 60px;
+    text-align: left;
+  }
+}
+.gallery__author {
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: bold;
+  span {
+    color: #a1a7ad;
+  }
+}
+.gallery__likes {
+  position: relative;
+  margin-left: 30px;
+  color: #d22856;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -30px;
+    background: url("../../img/spritesheet.png") no-repeat -821px -24px;
+    width: 13px;
+    height: 12px;
+  }
+}
+.send-img__range {
+  display: none;
+  &--mobile {
+    display: block;
+  }
+}
+@media #{$tablet-widths} {
+  .gallery > p {
+    font-size: 18px;
+    width: 440px;
+    margin-bottom: 80px;
+  }
+  .gallery__img {
+    span {
+      top: 50px;
+      right: 10%;
+    }
+  }
+  .gallery__item--top {
+    margin: 0!important;
+    padding: 0;
+  }
+  .gallery__item--top .gallery__content {
+    margin: 0 6%;
+    margin-bottom: 50px;
+    padding: 30px;
+    width: auto;
+    p {
+      width: auto;
+      margin-bottom: 0;
+    }
+    .gallery__likes {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+    }
+  }
+
+  .gallery__item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding-left: 40px;
+  }
+  .gallery__item {
+    padding: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .gallery__content {
+    width: 260px;
+  }
+}
+
+@media #{$desktop-width} {
+  .gallery {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .gallery__item {
+    margin-bottom: 50px;
+  }
+  .gallery__item-wrapper {
+    margin-bottom: 20px;
+  }
+
+}

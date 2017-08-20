@@ -2,157 +2,245 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>pink</title>
+    <title>pink_photo</title>
+    <link href="normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 </head>
 <body>
 <header class="page-header">
-    <figure class="page-header__logo">
-        <img src="/img/logotype-white-mobile.svg" width="22" height="75" alt="logo"/>
-    </figure>
-    <button class="main-nav__toggle" type="button"></button>
-    <nav class="main-nav main-nav-closed">
-        <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-                <li class="main-nav__item"><a href="#">Главная</a></li>
-                <li class="main-nav__item"><a href="#">Фотографии</a></li>
-                <li class="main-nav__item"><a href="#">Конкурс</a></li>
-                <li class="main-nav__item"><a href="#">Html Academy</a></li>
-            </ul>
+    <nav class="main-nav">
+        <div class="main-nav__active">
+            <figure class="page-header__logo"><a href="index.html"></a></figure>
+            <button class="main-nav__toggle btn" type="button"></button>
         </div>
+        <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a>Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Истории</a></li>
+            <li class="main-nav__item"><a href="#">Портфолио</a></li>
+        </ul>
     </nav>
 </header>
 <main>
     <section class="main-header">
-        <figure class="main-header__img">
-            <img src="img/back-mobile.jpg" width="320" height="462" alt=""/>
-        </figure>
-        <h1>
-            Фотографии пользователей
-        </h1>
+        <div class="main-header__wrapper">
+            <h1 class="main-header__title  main-header__title--tablet">Конкурс на самое безбашенное путешествие с Пинк</h1>
+            <h1 class="main-header__title  main-header__title2--tablet">Фотографии пользователей</h1>
+        </div>
     </section>
     <section class="gallery">
         <p>
             Взгляните на фотографии, которые выкладывают пользователи!
             Видите, как не хватает ваших?
         </p>
-        <div class="gallery__item">
+        <div class="gallery__item  gallery__item--top">
             <figure class="gallery__img">
-                <img src="img/panorama-mobile.jpg" width="320" height="137" alt="">
+                <picture>
+                    <source media="(min-width: 700px)"
+                    srcset="img/panorama-desktop.jpg">
+                    <img src="img/panorama-mobile.jpg" alt="">
+                </picture>
+                <span>Панорама дня</span>
             </figure>
             <blockquote class="gallery__content">
-                <cite class="gallery__author">Анна<span>(5 минут назад)</span></cite>
+                <cite class="gallery__author">Анна <span>(5 минут назад)</span></cite>
                 <p>
                     Прыгать или нет? Напишите в коментарии свой совет исмотрите
                     прямую транслацию в перископе, задавайте свои вопросы!
                 </p>
-                <div class="gallery__likes">Нравится:<span>215</span></div>
+                <div class="gallery__likes">Нравится: <span>215</span></div>
             </blockquote>
         </div>
-        <div class="gallery__item">
-            <figure class="gallery__img">
-                <img src="img/photo-1-mobile.jpg" width="280" height="180" alt="">
-            </figure>
-            <blockquote class="gallery__content">
-                <cite class="gallery__author">Левон<span>(5 часов назад)</span></cite>
-                <p>
-                    Вчера он на луну летал, сегодня в руки к нам попал.
-                </p>
-                <div class="gallery__likes">Нравится:<span>356</span></div>
-            </blockquote>
-        </div>
-        <div class="gallery__item">
-            <figure class="gallery__img">
-                <img src="img/photo-2-mobile.jpg" width="280" height="180" alt="">
-            </figure>
-            <blockquote class="gallery__content">
-                <cite class="gallery__author">Антон<span>(12 часов назад)</span></cite>
-                <p>
-                    Сосади будут рады!
-                </p>
-                <div class="gallery__likes">Нравится:<span>666</span></div>
-            </blockquote>
-        </div>
-        <div class="gallery__item">
-            <figure class="gallery__img">
-                <img src="img/photo-3-mobile.jpg" width="280" height="180" alt="">
-            </figure>
-            <blockquote class="gallery__content">
-                <cite class="gallery__author">Борис<span>(20 часов назад)</span></cite>
-                <p>
-                    Здесь могла быть ваша цитата о высоком и вечном.
-                </p>
-                <div class="gallery__likes">Нравится:<span>215</span></div>
-            </blockquote>
-        </div>
-        <div class="gallery__item">
-            <figure class="gallery__img">
-                <img src="img/photo-4-mobile.jpg" width="280" height="180" alt="">
-            </figure>
-            <blockquote class="gallery__content">
-                <cite class="gallery__author">Сергей<span>(25 часов назад)</span></cite>
-                <p>
-                    Самая кубанская в мире!
-                </p>
-                <div class="gallery__likes">Нравится:<span>4</span></div>
-            </blockquote>
-        </div>
-        <div class="gallery__item">
-            <figure class="gallery__img">
-                <img src="img/photo-5-mobile.jpg" width="280" height="180" alt="">
-            </figure>
-            <blockquote class="gallery__content">
-                <cite class="gallery__author">Максим<span>(40 часов назад)</span></cite>
-                <p>
-                    Где снег-то?
-                </p>
-                <div class="gallery__likes">Нравится:<span>150</span></div>
-            </blockquote>
-        </div>
-        <div class="gallery__item">
-            <figure class="gallery__img">
-                <img src="img/photo-6-mobile.jpg" width="280" height="180" alt="">
-            </figure>
-            <blockquote class="gallery__content">
-                <cite class="gallery__author">Надежда<span>(45 часов назад)</span></cite>
-                <p>
-                    Всем GM и взаимные лайки!
-                </p>
-                <div class="gallery__likes">Нравится:<span>2560</span></div>
-            </blockquote>
+        <div class="gallery__item-wrapper">
+            <div class="gallery__item">
+                <figure class="gallery__img">
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                                srcset="img/photo-1-desktop.jpg">
+                        <source media="(min-width: 700px)"
+                                srcset="img/photo-1-tablet.jpg">
+                        <img src="img/photo-1-mobile.jpg" alt="">
+                    </picture>
+                </figure>
+                <blockquote class="gallery__content">
+                    <cite class="gallery__author">Левон <span>(5 часов назад)</span></cite>
+                    <p>
+                        Вчера он на луну летал, сегодня в руки к нам попал.
+                    </p>
+                    <div class="gallery__likes">Нравится: <span>356</span></div>
+                </blockquote>
+            </div>
+            <div class="gallery__item">
+                <figure class="gallery__img">
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                                srcset="img/photo-2-desktop.jpg">
+                        <source media="(min-width: 700px)"
+                                srcset="img/photo-2-tablet.jpg">
+                        <img src="img/photo-2-mobile.jpg" alt="">
+                    </picture>
+                </figure>
+                <blockquote class="gallery__content">
+                    <cite class="gallery__author">Антон <span>(12 часов назад)</span></cite>
+                    <p>
+                        Сосади будут рады!
+                    </p>
+                    <div class="gallery__likes">Нравится: <span>666</span></div>
+                </blockquote>
+            </div>
+            <div class="gallery__item">
+                <figure class="gallery__img">
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                                srcset="img/photo-3-desktop.jpg">
+                        <source media="(min-width: 700px)"
+                                srcset="img/photo-3-tablet.jpg">
+                        <img src="img/photo-3-mobile.jpg" alt="">
+                    </picture>
+                </figure>
+                <blockquote class="gallery__content">
+                    <cite class="gallery__author">Борис <span>(20 часов назад)</span></cite>
+                    <p>
+                        Здесь могла быть ваша цитата о высоком и вечном.
+                    </p>
+                    <div class="gallery__likes">Нравится: <span>215</span></div>
+                </blockquote>
+            </div>
+            <div class="gallery__item">
+                <figure class="gallery__img">
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                                srcset="img/photo-4-desktop.jpg">
+                        <source media="(min-width: 700px)"
+                                srcset="img/photo-4-tablet.jpg">
+                        <img src="img/photo-4-mobile.jpg" alt="">
+                    </picture>
+                </figure>
+                <blockquote class="gallery__content">
+                    <cite class="gallery__author">Сергей <span>(25 часов назад)</span></cite>
+                    <p>
+                        Самая кубанская в мире!
+                    </p>
+                    <div class="gallery__likes">Нравится: <span>4</span></div>
+                </blockquote>
+            </div>
+            <div class="gallery__item">
+                <figure class="gallery__img">
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                                srcset="img/photo-5-desktop.jpg">
+                        <source media="(min-width: 700px)"
+                                srcset="img/photo-5-tablet.jpg">
+                        <img src="img/photo-5-mobile.jpg" alt="">
+                    </picture>
+                </figure>
+                <blockquote class="gallery__content">
+                    <cite class="gallery__author">Максим <span>(40 часов назад)</span></cite>
+                    <p>
+                        Где снег-то?
+                    </p>
+                    <div class="gallery__likes">Нравится: <span>150</span></div>
+                </blockquote>
+            </div>
+            <div class="gallery__item">
+                <figure class="gallery__img">
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                                srcset="img/photo-6-desktop.jpg">
+                        <source media="(min-width: 700px)"
+                                srcset="img/photo-6-tablet.jpg">
+                        <img src="img/photo-6-mobile.jpg" alt="">
+                    </picture>
+                </figure>
+                <blockquote class="gallery__content">
+                    <cite class="gallery__author">Надежд <span>(45 часов назад)</span></cite>
+                    <p>
+                        Всем GM и взаимные лайки!
+                    </p>
+                    <div class="gallery__likes">Нравится: <span>2560</span></div>
+                </blockquote>
+            </div>
         </div>
         <p>
-            Затмите их всех!
+            Затмите их всех!<br>
             Выкладывайте все, что накопилось в телефоне!
         </p>
     </section>
     <section class="send-img">
         <form class="send-img__form" action="" method="post">
             <figure class="send-img__img">
-                <img src="img/photo-7-mobile.jpg" width="280" height="374" alt=""/>
+                <picture>
+                    <source media="(min-width: 700px)"
+                            srcset="img/photo-7-tablet.jpg">
+                    <img src="img/photo-7-mobile.jpg" alt="">
+                </picture>
             </figure>
-            <button class="send-img__btn  send-img__btn--crop  btn" type="button"></button>
-            <button class="send-img__btn  send-img__btn--fill  btn" type="button"></button>
-            <button class="send-img__btn  send-img__btn--contrast  btn" type="button"></button>
-            <div class="send-img__range"></div><!--Сделать ползунок!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-            <button class="send-img__btn-send  btn" type="submit">Запостить</button>
-            <button class="send-img__btn-reset  btn" type="reset">Отмена</button>
+            <div class="send-img__content-wrapper">
+                <div class="send-img__btn-wrapper" >
+                    <div class="send-img__range-wrapper">
+                        <button class="send-img__btn  send-img__btn--crop  btn" type="button"></button>
+                        <div class="send-img__range  send-img__range--table  slider"></div><!--Сделать ползунок!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+                    </div>
+                    <div class="send-img__range-wrapper">
+                        <button class="send-img__btn  send-img__btn--fill  btn" type="button"></button>
+                        <div class="send-img__range  send-img__range--table  slider"></div><!--Сделать ползунок!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+                    </div>
+                    <div class="send-img__range-wrapper">
+                        <button class="send-img__btn  send-img__btn--contrast  btn" type="button"></button>
+                        <div class="send-img__range  send-img__range--table  slider"></div><!--Сделать ползунок!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+                    </div>
+                </div>
+                <div  class="send-img__range  send-img__range--mobile  slider"></div><!--Сделать ползунок!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+                <div class="send-img__btn-send-wrapper">
+                    <button class="send-img__btn-send  btn" type="submit">Запостить</button>
+                    <button class="send-img__btn-reset  btn" type="reset">Отмена</button>
+                </div>
+            </div>
         </form>
     </section>
 </main>
-<footer class="page-footer">
+<footer class="page-footer ">
     <figure class="page-footer__logo">
-        <img src="img/logotype-blue-tablet.svg" width="147" height="40" alt="">
+        <a href="#"></a>
     </figure>
     <div class="page-footer__social">
         <ul class="social">
-            <li class="social__item social__item--tw"><a href="#">Мы в Твиттере</a></li>
-            <li class="social__item social__item--fb"><a href="#">Мы в Фейсбуке</a></li>
-            <li class="social__item social__item--youtube"><a href="#">Мы на Ютубе</a></li>
+            <li class="social__item social__item--tw">
+                <a href="#">
+                    Мы в Твиттере
+                    <svg class="icon  icon-twitter">
+                        <use xlink:href="../../img/sprite.svg#twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item social__item--fb">
+                <a href="#">
+                    Мы в Фейсбуке
+                    <svg class="icon  icon-facebook">
+                        <use xlink:href="../../img/sprite.svg#fb"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item social__item--youtube">
+                <a href="#">
+                    Мы на Ютубе
+                    <svg class="icon  icon-youtube">
+                        <use xlink:href="../../img/sprite.svg#youtube"></use>
+                    </svg>
+                </a>
+            </li>
         </ul>
     </div>
     <div class="page-footer__copyright">
-        <a href="#">Разработано <span class="page-footer__copyright-item"></span></a>
+        <a href="#">
+            Разработано
+        </a>
     </div>
 </footer>
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script  type="text/javascript" src="js/js.js"></script>
 </body>
 </html>

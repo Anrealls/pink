@@ -1,0 +1,30 @@
+.price__slider {
+  padding-bottom: 40px;
+}
+.price .sliders {
+  margin: 0 auto;
+  width: auto;
+}
+.price .slick-list {
+  margin-bottom: 40px;
+}
+.price .slick-slide {
+  outline: none;
+}
+.price .slick-dots {
+  margin-bottom: 40px;
+}
+
+.price .slick-dots li button::before {
+  content: "" !important;
+  width: 6px !important;
+  height: 6px !important;
+  background-color: #bec2c7;
+  font-size: 0;
+  border-radius: 50px;
+  border: 3px solid #f2f2f2;
+}
+.price .slick-dots .slick-active button::before {
+  background-color: #ffffff;
+  border: 3px solid #000000;
+}

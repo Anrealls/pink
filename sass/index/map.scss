@@ -1,0 +1,27 @@
+@import "../var";
+.map {
+  position: relative;
+}
+
+.icon-footer {
+  position: absolute;
+  z-index: 10;
+  //color: #ffffff;
+}
+#map {
+  width: 100%;
+  height: 200px;
+}
+@media #{$tablet-widths} {
+  .map {
+    margin-bottom: 30px;
+  }
+  #map {
+    height: 400px;
+  }
+}
+@media #{$desktop-width} {
+  #map {
+    height: 500px;
+  }
+}

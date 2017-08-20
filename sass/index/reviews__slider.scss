@@ -1,0 +1,60 @@
+.sliders {
+  margin: 0 auto;
+  min-width: 340px;
+}
+
+.slick-slide {
+  display: flex!important;
+  flex-direction: column;
+  align-items: center;
+  outline: none;
+}
+.slick-dots li button::before {
+  content: "" !important;
+  width: 6px !important;
+  height: 6px !important;
+  background-color: #bec2c7;
+  font-size: 0;
+  border-radius: 50px;
+  border: 3px solid #ffffff;
+}
+.slick-dots .slick-active button::before {
+  background-color: #ffffff;
+  border: 3px solid #000000;
+}
+@media #{$tablet-widths} {
+  .sliders {
+    width: 700px;
+  }
+}
+@media #{$desktop-width} {
+  .sliders {
+    margin-bottom: 0!important;
+  }
+  .slick-prev::before {
+    display: block;
+    position: absolute;
+    top: -120px;
+    left: -120px;
+    width: 30px;
+    height: 30px;
+    border-bottom: 2px solid #bec2c7;
+    border-left: 2px solid #bec2c7;
+    transform: rotate(45deg);
+
+  }
+  .slick-next::before {
+    display: block;
+    position: absolute;
+    top: -120px;
+    right: -120px;
+    width: 30px;
+    height: 30px;
+    border-bottom: 2px solid #bec2c7;
+    border-left: 2px solid #bec2c7;
+    transform: rotate(-135deg);
+  }
+  .slick-dots {
+    display: none!important;
+  }
+}

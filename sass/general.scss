@@ -1,0 +1,19 @@
+@import "var";
+body {
+  min-width: 320px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $color-text-default;
+  overflow-x: hidden;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
